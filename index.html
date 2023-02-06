@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Cash Register Manager</h1>
+			<p>
+				Enter the bill amount and cash given by the customer and know minium
+				number of notes to return and bill amount should be greater than zero.
+			</p>
+			<label class="block-element" for="billAmount">Bill Amount:</label>
+			<input
+				class="block-element"
+				id="billAmount"
+				type="text"
+				placeholder="Amount should be Greater than 0"
+			/>
+
+			<div class="subcontainer">
+				<label class="block-element" for="Cashgiven">Customer Cash Given</label>
+				<input type="text" name="" id="Cashgiven" />
+				<button class="block-element" id="btnCheck">Check</button>
+				<h3 id="errorMsg"></h3>
+				<table class="Table-class">
+					<caption class="ReturnChange">
+						Return Change
+					</caption>
+
+					<tr>
+						<th>No of Notes</th>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+						<td class="no_of_notes"></td>
+					</tr>
+					<tr>
+						<th>Notes</th>
+						<td>2000</td>
+						<td>500</td>
+						<td>200</td>
+						<td>100</td>
+						<td>50</td>
+						<td>20</td>
+						<td>10</td>
+						<td>5</td>
+						<td>1</td>
+					</tr>
+				</table>
+				<div class="footer">
+					<h3 class="minusMoney"></h3>
+					<h3 class="TotalAmount"></h3>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="app.js"></script>
+</html>
